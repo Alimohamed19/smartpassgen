@@ -42,7 +42,7 @@ Perfect for developers who need quick, flexible, and secure password generation 
 ## 📦 Installation
 
 ```bash
-pip install smartpassgen
+pip install smrtpsg
 ```
 ---
 ## 🧠 How to Use
