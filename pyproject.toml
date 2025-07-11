@@ -1,5 +1,5 @@
 [project]
-name = "smartpassgen"
+name = "smart-passgen"
 version = "0.0.1"
 authors = [
   { name="Ali Mohamed", email="aliali1354321@gmail.com" },

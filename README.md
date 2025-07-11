@@ -345,7 +345,7 @@ print(password)  # e.g., @^*!&$
 
 ###### ⚠️ Notes:
 - Symbols are selected from a default symbol set:
-<span style = "background :rgba(119, 119, 119, 0.06) ; border-radius:20px;">!@#$%^&*()-_=+[]{}|;:,.<>?/<>
+!@#$%^&*()-_=+[]{}|;:,.<>?/
 - Output contains only symbols, no digits or letters.
 - If no length is specified, the default from the class will be used.
 
