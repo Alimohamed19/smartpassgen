@@ -1,11 +1,6 @@
-import sys
-import os
 import random
 
-# ضيف مجلد src لمسار البحث
-sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'src')))
-
-from generator import PasswordGenerator   # 👈 استورد من generator.py مباشرة
+from smartpassgen import PasswordGenerator   # 👈 استورد من generator.py مباشرة
 
 Password_generator = PasswordGenerator() 
 pin = Password_generator.generat_Pin(6)
@@ -20,7 +15,7 @@ print(f"Generated Alphanumeric Password: {Password_generator.generate_alphanumer
 print(f"Generated Custom Charset Password: {generate_custom_charset_password}\n")
 
 # حروف وأرقام منفصلة
-print(f"Generated Only Letters Password: {Password_generator.generate_only_letters_password(length=length, Case_of_letters='lower')}")
+print(f"Generated Only Letters Password: {Password_generator.generate_only_letters_password(length=length, Case_of_letters='mixed')}")
 print(f"Generated Only Numbers Password: {Password_generator.generate_only_numbers_password(length=length)}")
 print(f"Generated Only Symbols Password: {Password_generator.generate_only_symbols_password(length=length)}\n")
 

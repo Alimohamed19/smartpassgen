@@ -1,4 +1,6 @@
 import random
+import importlib.resources
+
 
 class PasswordGenerator:
     """
@@ -284,7 +286,7 @@ class PasswordGenerator:
 
     def generate_passphrase(self ,count_words = 4 , join_words = True , separator = '  '):
         """Generates a passphrase with a specified number of words."""
-        with open('src/words_list.txt', 'r', encoding='utf-8') as file:
+        with importlib.resources.files("smartpassgen").joinpath("words_list.txt").open("r", encoding="utf-8") as file:
             words = file.read().splitlines()
         if count_words < 1:
             raise ValueError("Count must be at least 1.")
